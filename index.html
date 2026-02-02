@@ -9,26 +9,37 @@
 <body>
 
     <header class="bg-white shadow-sm">
-        <nav class="lg:mx-20 max-w-7*1 max-auto px-6 py-4 flex items-center justify-between" >
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
+            <!-- Logo -->
             <div class="flex items-center">
-                <img src="./assets/logo.png" alt="logo" class="w-8 h-8">
+                <img class="w-8 h-8" src="./assets/logo.png" alt="logo">
             </div>
 
-            <ul class="flex items-center gap-8 text-gray-700 font-medium ">
-                <li><a href="" class="hidden md: hover:text-orange-500">Home</a></li>
-                <li><a href="" class="hidden md: hover:text-orange-500">Shop</a></li>
-                <li><a href="" class="hidden md: hover:text-orange-500">Abount us</a></li>
-                <li><a href="" class="hover:text-orange-500>🛒 <span>Cart</span> </a></li>
-            </ul>
+            <!-- Manu+card group for desktop only -->
+             <div class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+                <!-- manu -->
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About us</a>
 
-            <div class="class="md:flex items-left gap-2 font-medium">
-                <a href="">🛒 <span>Cart</span></a>
-                
-                
-            </div>
+                <!-- card -->
+                <a href="#" class="flex items-center gap-2 hover:text-orange-500">
+                    <span>🛒</span>
+                    <span>Card ($56)</span>
+                </a>
+             </div>
+
+             <!-- card for mobile -->
+              <div class="md:hidden flex items-center gap-2 font-medium text-gray-700">
+                <span>🛒</span>
+                <span>Card ($56)</span>
+              </div>
+
+
         </nav>
     </header>
+
     
 </body>
 </html>
