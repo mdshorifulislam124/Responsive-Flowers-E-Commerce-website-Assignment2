@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment2</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+
+    <style>
+        .font-noto {
+            font-family: "Noto Serif", serif;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -35,10 +46,25 @@
                 <span>🛒</span>
                 <span>Card ($56)</span>
               </div>
-
-
         </nav>
     </header>
+
+    <!-- hero section -->
+    <section class="bg-white my-5 mt-20">
+        <!-- <div class="max-w-7xl mx-auto px-6 py-4 flex items-end justify-between"> -->
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex flex-col-reverse md:flex-row items-center justify-between gap-y-7 md:gap-x-10">
+
+            <div class="w-full md:w-1/2">
+                <h1 class="font-noto text-3xl md:text-5xl font-semibold">ALWAYS <span class="text-orange-500">FRESH</span></h1>
+                <h1 class="font-noto mt-4 text-3xl md:text-5xl font-semibold text-orange-500">FLOWERS</h1>
+                <p class="mt-4 text-xl w-[280px] md:w-[500px] text-base leading-relaxed">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
+            </div>
+
+            <div class="w-full md:w-1/2">
+                <img class="w-full md:w-auto max-w-lg h-auto" src="./assets/hero-flower.png" alt="">
+            </div>
+        </div>
+    </section>
 
     
 </body>
